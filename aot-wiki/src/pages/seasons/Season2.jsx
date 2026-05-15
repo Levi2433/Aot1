@@ -107,7 +107,7 @@ export default function Season2({ navigate }) {
           <div className="ep-modal" onClick={(e) => e.stopPropagation()}>
             <button className="ep-modal-close" onClick={() => setActiveEp(null)}>✕</button>
             <div className="ep-modal-video">
-              <iframe src={episodes[activeEp].src} title={episodes[activeEp].title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen />
+              <iframe src={episodes[activeEp].src} title={episodes[activeEp].title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"allowFullScreen />
             </div>
             <div className="ep-modal-info">
               <span className="ep-num">{episodes[activeEp].num}</span>
@@ -127,7 +127,7 @@ export default function Season2({ navigate }) {
           <span className="ep-season-tag">Сезон 2 · 2017 · 12 серий · Wit Studio</span>
           <h1>Титаны против Титанов</h1>
           <p className="ep-synopsis">
-            Второй сезон переворачивает представление об угрозе: враг больше не снаружи — он уже внутри стен. Жители деревни Рагако превращены в Титанов, и среди самих солдат оказываются шпионы с нечеловеческой силой. Райнер и Бертольдт раскрывают свои истинные личности — и мир Эрена рушится во второй раз.
+             Второй сезон переворачивает всё, что казалось незыблемым. Враг больше не снаружи — он уже давно внутри стен, внутри самого Разведкорпуса. Стены, защищавшие человечество, оказываются сложены из тел Колоссальных Титанов. Жители целой деревни бесследно исчезают, превратившись во что-то невозможное. Зверский Титан — говорящий, думающий, стратегически мыслящий — обозначает себя как принципиально иную угрозу. А затем происходит то, что разрывает сердце: Райнер Браун и Бертольдт Хувер — боевые товарищи, братья по оружию — признаются, что именно они уничтожили Стену Мария пять лет назад. Это предательство не из злобы, а из долга, что делает его ещё невыносимее. Сезон сжат до 12 серий, но каждая из них бьёт точно в цель. Кульминация — первое прикосновение Эрена к Координатному крику — силе повелевать Титанами — открывает совершенно новое измерение конфликта и задаёт вопросы, ответы на которые придут лишь спустя сезоны.
           </p>
         </div>
 

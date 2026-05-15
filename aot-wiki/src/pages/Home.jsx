@@ -20,6 +20,7 @@ import porkoImg     from "../assets/img/Porco_Galliard_29_character_image.webp";
 import imirFritzImg from "../assets/img/Ymir_Fritz_29_character_image.webp";
 import imirImg      from "../assets/img/Ymir_29_character_image.webp";
 import hammerImg    from "../assets/img/titan2.jpg";
+import flock        from '../assets/img/Floch_Forster_29_character_image_291.webp'
 
 const characters = [
   { href: "eren",     img: erenImg,      name: "Эрен Йегер",        role: "Разведкорпус · Носитель Атакующего Титана",                          tags: ["survey", "shifter"] },
@@ -40,6 +41,7 @@ const characters = [
   { href: "imir",     img: imirFritzImg, name: "Имир Фриц",         role: "Основательница рода · Мать Титанов · Пленница Путей",                tags: ["survey", "marley", "shifter"] },
   { href: "imer",     img: imirImg,      name: "Имир",              role: "Имир — Кадет 104-го корпуса · Зубастый Титан",                       tags: ["survey", "marley", "shifter"] },
   { href: "hummer",   img: hammerImg,    name: "Титан Молот Войны", role: "Оружие семьи Тайбер · Мастер структурного созидания",                tags: ["survey", "marley", "shifter"] },
+  { href: "flock",     img: flock,      name: "Флок",     role: "Разведкорпус · Солдат",                                             tags: ["survey"] },
 ];
 
 const filters = [
@@ -124,16 +126,16 @@ export default function Home({ navigate }) {
               ))}
             </div>
           </div>
-        </div>
+        </div>  
       </section>
 
       {/* ── QUICK NAV ────────────────────────────────────────── */}
       <section className="about-section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="filter-bar fade-in-up">
-            <button className="filter-btn" onClick={() => navigate("series")}>📺 Серии аниме</button>
-            <button className="filter-btn" onClick={() => navigate("walls")}>🏰 Три Стены</button>
-            <button className="filter-btn" onClick={() => navigate("military")}>⚔ Военные силы</button>
+            <button className="filter-btn" onClick={() => navigate("series")}> Серии аниме</button>
+            <button className="filter-btn" onClick={() => navigate("walls")}> Три Стены</button>
+            <button className="filter-btn" onClick={() => navigate("military")}> Военные силы</button>
           </div>
         </div>
       </section>

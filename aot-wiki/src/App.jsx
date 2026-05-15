@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "./style.css";
-
+// import "./i18n";
 import Navbar from "./components/Navbar";
 
 // Pages
+import Author from '../src/pages/Author'
 import Home     from "./pages/Home";
 import Annie    from "./pages/Annie";
 import Armin    from "./pages/Armin";
@@ -27,6 +28,10 @@ import Series   from "./pages/Series";
 import Walls    from "./pages/Walls";
 import Zik      from "./pages/Zik";
 import Manga    from "../src/pages/Manga"
+import Studio   from "../src/pages/Studio" 
+import Flock    from "../src/pages/Flock" 
+import Paradis  from "../src/pages/Paradis" 
+import Marli    from "../src/pages/Marli"
 
 // Season pages
 import Season1 from "./pages/seasons/Season1";
@@ -84,6 +89,8 @@ export default function App() {
 
   const renderPage = () => {
     switch (page) {
+      case "paradis":     return <Paradis     navigate={navigate} />;
+      case "author":     return <Author     navigate={navigate} />;
       case "home":     return <Home     navigate={navigate} />;
       case "annie":    return <Annie    navigate={navigate} />;
       case "armin":    return <Armin    navigate={navigate} />;
@@ -94,6 +101,7 @@ export default function App() {
       case "hange":    return <Hange    navigate={navigate} />;
       case "hummer":   return <Hummer   navigate={navigate} />;
       case "imer":     return <Imer     navigate={navigate} />;
+      case "marli":     return <Marli     navigate={navigate} />;
       case "imir":     return <Imir     navigate={navigate} />;
       case "jean":     return <Jean     navigate={navigate} />;
       case "levi":     return <Levi     navigate={navigate} />;
@@ -111,6 +119,8 @@ export default function App() {
       case "season3":  return <Season3  navigate={navigate} />;
       case "season4":  return <Season4  navigate={navigate} />;
       case "manga":      return <Manga      navigate={navigate} />;
+      case "studio":     return <Studio     navigate={navigate} />;
+      case "flock":     return <Flock     navigate={navigate} />;
       // remaining placeholders
       default:
         const names = {

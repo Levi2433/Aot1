@@ -18,6 +18,10 @@ export default function Navbar({ currentPage, navigate }) {
     { label: "Военные", page: "military" },
     { label: "Серии", page: "series" },
     { label: "Манга", page: "manga" },
+    { label: "Студиа", page: "studio" },
+    { label: "Автор", page: "author" },
+    { label: "Парадиз", page: "paradis" },
+    { label: "Марли", page: "marli" }
     
   ];
 
